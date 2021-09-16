@@ -70,6 +70,12 @@ namespace HelloMVC.Controllers
                 BomAluno = true
             });
 
+            model.Add(new HelloMVCModel()
+            {
+                Nome = "Edimilson",
+                Idade = 17,
+                BomAluno = false
+            });
             return View(model);
         }
     }
