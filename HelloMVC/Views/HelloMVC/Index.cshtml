@@ -1,0 +1,22 @@
+﻿@model List<HelloMVC.Models.HelloMVCModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<table border="1" width="80%" height="80%">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                Nome: @item.Nome
+            </td>
+            <td>
+                Idade: @item.Idade
+            </td>
+            <td>
+                Bom Aluno: @item.BomAluno
+            </td>
+        </tr>
+    }
+</table>
